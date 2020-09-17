@@ -64,8 +64,7 @@ body {
 }
 
 .group.one {
-    min-height: 19rem; 
-    
+    min-height: 19rem;   
 }
 
 .instagram-logo {
@@ -126,20 +125,21 @@ body {
     padding: 1rem;
 }
 
+.images-download img {
+    max-width: 140px;
+    max-height: 80px;
+}
+
 .logo.apple {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 55%;
-    max-height: 55%;
 }
 
 .logo.google {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 85%;
-    max-height: 85%;
 }
 
 footer {
@@ -170,6 +170,10 @@ footer {
 }
 
 @media(max-width: 1200px) {
+    .instagram {
+        width: 90%; 
+    }
+
     footer {
         flex-direction: column;
     }
@@ -197,6 +201,12 @@ footer {
 
     .footer-copyright {
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .instagram {
+        width: 100%; 
     }
 }
 
