@@ -13,16 +13,22 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgb(243, 243, 243);
-    display: flex; /* elementos em linha */
-    justify-content: center; /* centralizar na horizontal. Alinha sempre o flex-direction. Se for none, é row. */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .instagram {
     display: flex;
-    justify-content: start; /* alinha rente à borda esquerda */
+    justify-content: center; /* alinhamento na horizontal, de acordo com o flex-direction */
     align-items: center; /* centralizar na vertical */
     width: 60%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .instagram-phone {
@@ -136,9 +142,61 @@ body {
     max-height: 85%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    text-transform: uppercase;
+    font-size: 5px;
+    font-weight: bold;
+}
+
+.footer-menu {
+    margin: 0 auto;
+}
+
+.footer-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    color: rgb(89, 78, 126);
+}
+
+.footer-copyright {
+    color: rgb(160, 160, 160);
+    margin: 0 auto; 
+}
+
+@media(max-width: 1200px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 1024px) {
     .instagram {
         width: 90%; 
+    }
+    
+    .footer-menu {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-copyright {
+        margin-top: 10px;
     }
 }
 
@@ -162,4 +220,13 @@ body {
     .group {
         border: 1px solid transparent;
     } 
+
+    .footer-menu {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
