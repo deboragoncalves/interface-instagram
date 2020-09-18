@@ -85,9 +85,17 @@ body {
 
 .instagram-login {
     background-color: #0095f6;
-    color: #ffff;
     padding: 8px;
     border-radius: 4px;
+    color: #ffff;
+}
+
+.instagram-login:hover {
+    font-weight: bold;
+}
+
+.instagram-login a:hover {
+    font-weight: bold;
 }
 
 .instagram-logout {
@@ -95,12 +103,21 @@ body {
     margin-top: 1rem;
 }
 
+.instagram-logout:hover {
+    color: rgb(68, 60, 97);
+    font-weight: bold;
+}
+
 .not-account {
     color: rgb(160, 160, 160);
 }
 
-.link-blue {
+.link-blue a {
     color: #0095f6;
+}
+
+.link-blue a:hover {
+    font-weight: bold;
 }
 
 .download-app {
@@ -128,6 +145,7 @@ body {
 .images-download img {
     max-width: 140px;
     max-height: 80px;
+    cursor: pointer;
 }
 
 .logo.apple {
@@ -161,7 +179,14 @@ footer {
     list-style-type: none;
     display: inline-block;
     padding: 5px;
-    color: rgb(89, 78, 126);
+}
+
+.footer-menu ul li a {
+    color: #0095f6;
+}
+
+.footer-menu ul li a:hover {
+    color: rgb(68, 60, 97);
 }
 
 .footer-copyright {
